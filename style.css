@@ -1,0 +1,121 @@
+body {
+    font-family: 'Adiro', Arial;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    background:rgb(86, 37, 119);
+    color: black;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .bg-light {
+    background-color: #f3e7e7;
+  }
+  
+  .card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  .skills-list li {
+    background: #007bff;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  
+  .skills-list li:hover {
+    background: #00c6ff;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  footer a {
+    color: #00c6ff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .bg-dark {
+    background-color: #343a40;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.75rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  }
+  
