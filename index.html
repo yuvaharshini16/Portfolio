@@ -2,129 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio project</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yuva Harshini | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: 'Georgia', serif;
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: #0f172a; color: #fff; line-height: 1.6; }
+
+    .container { width: 90%; margin: auto; padding: 20px 0; }
+
+    nav.navbar {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+      margin-bottom: 50px;
     }
+    .logo { font-size: 1.8rem; font-weight: 800; }
+    .nav-links { list-style: none; display: flex; gap: 30px; flex-wrap: wrap; }
+    .nav-links a {
+      text-decoration: none; color: #fff; transition: 0.3s;
+    }
+    .nav-links a:hover { color: #38bdf8; }
+
+    section { padding: 60px 0; border-bottom: 1px solid #1e293b; }
+
     .hero {
-      background:linear-gradient(135deg,rgb(46, 168, 138),rgb(20, 80, 90));
-      color: black;
-      padding: 80px 0;
-      text-align: left;
+      display: flex; flex-direction: column; gap: 30px;
     }
+    .text-content h1 { font-size: 3rem; font-weight: 800; margin: 10px 0; }
+    .highlight { color: #38bdf8; }
+    .text-content p { margin: 15px 0; color: #ccc; }
+
+    .social-icons a {
+      text-decoration: none; color: #fff; margin-right: 15px; font-size: 1.2rem;
+      transition: 0.3s;
+    }
+    .social-icons a:hover { color: #38bdf8; }
+
+    .btn-3d {
+      display: inline-block; padding: 12px 30px; background: #38bdf8; color: #000;
+      font-weight: 600; border-radius: 30px; text-decoration: none;
+      box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 20px;
+    }
+    .btn-3d:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(56, 189, 248, 0.6);
+    }
+
     .section-title {
-      font-weight: 600;
-      margin-bottom: 30px;
+      font-size: 2rem; margin-bottom: 20px; color: #38bdf8;
     }
-    /* Skills */
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    margin-top: 1rem;
-  }
-  
-    .card {
-      border-radius: 1rem;
+
+    .about p, .contact p { max-width: 700px; color: #ccc; }
+
+    .skills ul {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;
+      list-style: none; margin-top: 20px;
+    }
+    .skills li {
+      background: #1e293b; padding: 10px 20px; border-radius: 10px;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+    }
+    .project-card {
+      background: #1e293b; padding: 20px; border-radius: 10px;
+      transition: 0.3s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+
+    .contact form {
+      margin-top: 20px; max-width: 500px;
+    }
+    .contact input, .contact textarea {
+      width: 100%; padding: 10px; margin-bottom: 15px; border: none;
+      border-radius: 8px; background: #1e293b; color: #fff;
+    }
+    .contact button {
+      background: #38bdf8; padding: 10px 20px; border: none;
+      border-radius: 8px; font-weight: bold;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #0ea5e9;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-4">Yuvaharshini</h1>
-      <p class="lead">Data Analyst | Research Engineer | ML Enthusiast </p>
-    </div>
-  </section>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Portfolio.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- About -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-left">About Me</h2>
-      <p class="text-left">
-        I’m a Aspiring Data Analyst with a strong foundation in statistics, data visualization, and analytical tools such as Excel, SQL, Python 
-        Passionate about transforming raw data into actionable insights to support strategic decision-making
-      </p>
-    </div>
-  </section>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="text-content">
+        <h2>Hello, Myself...</h2>
+        <h1>Yuva Harshini</h1>
+        <h3>And I'm a <span class="highlight">Data Analyst</span></h3>
+        <p>Currently pursuing B.E. in Computer Science and Engineering.<br>
+           Passionate about transforming raw data into meaningful insights using SQL, Python, Excel, and R.<br>
+           Eager to contribute as a Data Analyst Intern or Entry-Level Analyst.</p>
 
-  <!-- Skills -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-left">Skills</h2>
-      <div class="row text-left">
-        <div class="col-md-3">Machine learning(python)</div>
-        <div class="col-md-3">Programming c</div>
-        <div class="col-md-3">DBMS</div>
-        <div class="col-md-3">HTML</div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <a href="#" class="btn-3d">Download CV</a>
       </div>
-      <div class="row text-left mt-3">
-        <div class="col-md-3">Artificial Intelligence</div>
-        <div class="col-md-3">Git & GitHub</div>
-        <div class="col-md-3">Programming c++</div>
-        <div class="col-md-3">CSS/JSs</div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>I’m a dedicated and detail-oriented data enthusiast with a strong foundation in programming, databases, and analytics. As a final-year B.E. CSE student, I’ve worked on academic data projects and gained experience with Excel, Python (Pandas), SQL, and Power BI. I'm passionate about data storytelling and eager to grow as a Data Analyst in a professional environment.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>SQL</li>
+        <li>Python (Pandas, NumPy, Matplotlib)</li>
+        <li>R</li>
+        <li>MS Excel</li>
+        <li>Tableau (Basic)</li>
+        <li>Data Cleaning</li>
+        <li>Data Visualization</li>
+        <li>Descriptive Statistics</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-card">
+        <h3>Responsive Web Design</h3>
+        <p>Created a responsive web Design in a academics mini project</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Projects -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-left">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Portfolio Website</h5>
-            <p>A personal website built using HTML, CSS, Bootstrap, and deployed with GitHub Pages.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Patient Details Registration Form</h5>
-            <p> Its about the form of details of the patients build using HTML,CSS,JS in RPA.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Government Scheme Chatbot</h5>
-            <p>Government Scheme Chatbot build with the help of AI,NLP,Algorithms and ML in Niral Project.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Traffic Monitoring System</h5>
-            <p>A website built for traffic monitoring using Frontend, Backend, Sensors&GPS data, Dockers and Optional AI Features in college Mini project.</p>
-          </div>
-        </div>
+      <div class="project-card">
+        <h3>Airline Flights Data Analysis with Python</h3>
+        <p>Practiced and analyse a Real Time Airline Flights dataset in a Internship.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section class="py-5 bg-light">
-    <div class="container text-left">
-      <h2 class="section-title">Contact</h2>
-      <p>Email: 
-        <a href="mailto:yuvathangaraj04@gmail.com">yuvathangaraj04@gmail.com</a>
-      </p>
-      <p>LinkedIn: 
-        <a href="https://www.linkedin.com/in/yuvaharshinit" target="_blank">linkedin.com/in/yuvaharshinit</a>
-      </p>
-      <p>GitHub: 
-        <a href="https://github.com/yuvaharshini16" target="_blank">github.com/yuvaharshini16</a>
-      </p>
-    </div>
-  </section>
+      <div class="project-card">
+        <h3>Student Performance Analysis</h3>
+        <p>Analyzed academic data to identify factors affecting student performance using Python and basic machine learning models.</p>
+      </div>
+    </section>
 
-  <footer class="text-center py-3 bg-dark text-white">
-    © 2025 Yuvaharshini. All rights reserved.
-  </footer>
+    <!-- Contact -->
+    <!-- Contact -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <p>If you'd like to get in touch, you can reach me through the details below.</p>
 
+  <ul style="list-style: none; margin-top: 20px; padding-left: 0;">
+    <li style="margin-bottom: 10px;">
+      <i class="fas fa-envelope" style="margin-right: 10px; color: #38bdf8;"></i>
+      <a href="mailto:yuva@example.com" style="color: #fff; text-decoration: none;">yuvathangaraj04@gmail.com</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <i class="fas fa-phone" style="margin-right: 10px; color: #38bdf8;"></i>
+      <span style="color: #ccc;">+91-9384901843</span>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <i class="fab fa-github" style="margin-right: 10px; color: #38bdf8;"></i>
+      <a href="https://github.com/yuva-harshini" target="_blank" style="color: #fff; text-decoration: none;">github.com/yuva-harshini</a>
+    </li>
+  </ul>
+</section>
+  </div>
 </body>
 </html>
